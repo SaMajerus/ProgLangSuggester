@@ -6,7 +6,68 @@
   <title>Programming Language Suggestor:  A Quiz</title> 
 </head>
 
+
+<!--The 4 languages I've chosen as suggestion options for this Quiz are the following: 
+  C#
+  Javascript 
+  Python 
+  Swift [which is similar to Java, if memory serves.] 
+-->
+
+
 <body>
-  <h1>Programming Language Suggestor Quiz </h1>  
+  <h1>Programming Language Suggestor - A Quiz</h1>  
+
+  <!--In my opinion, one should eventually learn all 4 of these (in addition to some others, like C, Java, HTML, etc, but that's just me.)-->
+  <p>
+    The following quiz will ask you some questions. Then, based on your answers, it will suggest at least one -- out of 4** -- Programming Languages to learn. 
+    **These are: 
+    <ul> 
+      <li> 
+        C# ("C-sharp")
+      </li> 
+      <li> 
+        Javascript 
+      </li> 
+      <li> 
+        Python 
+      </li> 
+      <li> 
+        Swift
+      </li> 
+    </ul>
+  </p> 
+
+  <p>You may start whenever you're ready</p>
+
+  <form id="Qs">
+    <label for="ans1"></label>
+    <input id="ans1"  type="text"> <br>
+
+    <label for="ans2"></label>
+    <input id="ans2"  type="text"> <br>
+
+    <label for="ans3"></label>
+    <input id="ans3"  type="text"> <br>
+
+    <label for="ans4"></label>
+    <input id="ans4"  type="text"> <br>
+
+    <label for="ans5"></label>
+    <input id="ans5"  type="text"> <br>
+
+  </form>
+
+  <!--'Evaluate [Answers]' button-->
+  <button id="eval">Evaluate!</button>
+
+
+  <!--Result section [suggested language(s)]-->
+  <p id="suggestion"></p>  
+
+  
 </body>
+
+
+
 </html>
