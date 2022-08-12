@@ -41,9 +41,10 @@
   <p>You may start whenever you're ready</p>
 
   <form id="Qs">
-    <label for="ans1">Do any of the 4 programming languages described above interest you? (Check the box(-es) that best describe your feelings.)</label>
+    <label for="ans1">Which of these 4 programming languages interest you the most?</label>
 
-    <!--Checkbox. (In case User likes more than one of those listed (with descriptions) above.)
+    <!--Note-to-self [possible future input-type option for Q1]: Checkbox. (In case User likes more than one of those listed (with descriptions) above.)
+      "Do any of the 4 programming languages described above interest you? (Check the box(-es) that best describe your feelings.)" 
       C# 
       Javascript 
       Python 
@@ -51,14 +52,24 @@
       All of the above 
       None of the above 
     -->
-    <input id="ans1"  type="text"> <br>   
+    <select id="ans1">
+      
+    </select> <br>   
 
 
 
     <label for="ans2">How interested are you in Machine Learning (a.k.a. "Artificial Intelligence" or "AI")?</label>
  
-    <!--Select box: Very; Somewhat; Neutral/Unsure; Not At All; Never heard of it, tell me more?. -->
-    <input id="ans2"  type="text"> <br> 
+    <!--Last option doesn't trigger anything at the moment. However, in the future an alert box could pop up with a description. 
+      (I'm thinking that the User click 'Ok' to dismiss it, and then -- armed with that new knowledge -- choose one of the other answers) 
+    -->
+    <select id="ans2">
+      <option value="1">Very</option>
+      <option value="2">Somewhat</option>
+      <option value="3">Neutral/Unsure</option>
+      <option value="4">No Interest</option>
+      <option value="5">I've never heard of it before. Tell me more?</option> 
+    </select> <br> 
 
 
 
@@ -71,10 +82,15 @@
     <label for="ans5"></label>
     <input id="ans5"  type="text"> <br>
 
+
+
+    <!--'Evaluate [Answers]'/submission button-->
+    <button type="submit">Evaluate!</button> 
+
   </form>
 
-  <!--'Evaluate [Answers]' button-->
-  <button id="eval">Evaluate!</button>
+  <!--'Evaluate [Answers]'/submission button-->
+  <button type="submit">Evaluate!</button> 
 
 
   <!--Result section [suggested language(s)]-->
@@ -83,6 +99,17 @@
 
 </body>
 
+
+
+<!-- Note-To-Self [possible future input-type option for Q1]: Checkbox. (In case User likes more than one of those listed (with descriptions) above.)
+  "Do any of the 4 programming languages described above interest you? (Check the box(-es) that best describe your feelings.)" 
+    C# 
+    Javascript 
+    Python 
+    Swift 
+    All of the above 
+    None of the above 
+-->
 
 
 </html>

@@ -12,6 +12,7 @@ function evalAnswers (a1, a2, a3, a4, a5){  //Determines what user's Ans-combina
 function handleQzAns(event){  //Handles user's submitted answers 
   event.preventDefault();   //Prevents default behavior of 'omsubmit' event from occurring (which would prevent the page from functioning as intended). 
 
+  let result; //Initializes an empty variable. Will have a suggestion-value saved to it before the function returns this var to the function-caller. 
   //Retrieves user's answers, saves them. 
   const one = document.getElementById("ans1").value; 
   const two = document.getElementById("ans2").value; 
@@ -19,6 +20,8 @@ function handleQzAns(event){  //Handles user's submitted answers
   const four = document.getElementById("ans4").value; 
   const five = document.getElementById("ans5").value; 
 
+  /*Next line commented out temporarily until the function is finished.*/ 
+  //result = evalAnswers(one, two, three, four, five);   
 
 } 
 
