@@ -157,3 +157,8 @@ function handleQzAns(event){  //Handles user's submitted answers
   document.getElementById("suggestion").innerText = result; 
 } 
 
+
+window.addEventListener("load", function(){
+  const quiz = document.getElementById("Qs"); 
+  quiz.addEventListener("submit", handleQzAns);
+}); 
