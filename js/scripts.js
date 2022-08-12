@@ -1,7 +1,14 @@
 //Business Logic 
 function evalAnswers (a1, a2, a3, a4, a5){  //Determines what user's Ans-combination is, and returns a language suggestion based on it. 
+  
+  /*   'Rating' variables for each of the four languages the suggestor has to choose from. 
+    (The variable with the greatest number value after the answers have been processed is the one that gets suggested to the user.)  */ 
+  let pyth = 0; 
+  let sharp = 0; 
+  let java = 0; 
+  let swift = 0;  
 
-
+  
 
 }
 
