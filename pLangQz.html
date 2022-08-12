@@ -41,19 +41,15 @@
   <p>You may start whenever you're ready</p>
 
   <form id="Qs">
-    <label for="ans1">Which of these 4 programming languages interest you the most?</label>
+    <label for="ans1">Which of these 4 programming languages interest you the most? (Choose one)</label>
 
-    <!--Note-to-self [possible future input-type option for Q1]: Checkbox. (In case User likes more than one of those listed (with descriptions) above.)
-      "Do any of the 4 programming languages described above interest you? (Check the box(-es) that best describe your feelings.)" 
-      C# 
-      Javascript 
-      Python 
-      Swift 
-      All of the above 
-      None of the above 
-    -->
     <select id="ans1">
-      
+      <option value="1">C#</option>  
+      <option value="2">Javascript</option>  
+      <option value="3">Python</option>
+      <option value="4">Swift</option>
+      <option value="5">All of the above</option> 
+      <option value="6">None of the above</option>
     </select> <br>   
 
 
@@ -111,11 +107,8 @@
 
   </form>
 
-  <!--'Evaluate [Answers]'/submission button-->
-  <button type="submit">Evaluate!</button> 
 
-
-  <!--Result section [suggested language(s)]-->
+  <!--Result section [suggested language]-->
   <p id="suggestion"></p>  
 
 
