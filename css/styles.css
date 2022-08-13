@@ -1,0 +1,12 @@
+h2 {
+  text-decoration: underline; 
+  font-weight: bold; 
+} 
+
+h3 {
+  text-decoration: underline; 
+}
+
+.hidden {
+  display: none; 
+}

@@ -152,23 +152,27 @@ function evalRatings(r1, r2, r3, r4){  //Accepts the 'rating variables' from 'ev
 
 
 /*   User Interface (UI) Logic    */ 
-function handleQzAns(event){  //Handles user's submitted answers 
-  event.preventDefault();   //Prevents default behavior of 'omsubmit' event from occurring (which would prevent the page from functioning as intended). 
+window.onload = function(){
+  let form = document.querySelector("Qs"); 
+  form.onsubmit = function handleQzAns(event){  //Handles user's submitted answers 
+    event.preventDefault();   //Prevents default behavior of 'omsubmit' event from occurring (which would prevent the page from functioning as intended). 
 
-  let result; //Initializes an empty variable. Will have a suggestion-value saved to it before the function returns this var to the function-caller. 
-  //Retrieves user's answers, saves them. 
-  const one = parseInt(document.getElementById("ans1").value); 
-  const two = parseInt(document.getElementById("ans2").value); 
-  const three = parseInt(document.getElementById("ans3").value); 
-  const four = parseInt(document.getElementById("ans4").value); 
-  const five = parseInt(document.getElementById("ans5").value);  
+    let result; //Initializes an empty variable. Will have a suggestion-value saved to it before the function returns this var to the function-caller. 
+    
+    //Retrieves user's answers, saves them. 
+    const one = parseInt(document.getElementById("ans1").value); 
+    const two = parseInt(document.getElementById("ans2").value); 
+    const three = parseInt(document.getElementById("ans3").value); 
+    const four = parseInt(document.getElementById("ans4").value); 
+    const five = parseInt(document.getElementById("ans5").value);  
 
-  /*Next line commented out temporarily until the function is finished.*/ 
-  result = evalAnswers(one, two, three, four, five);   
+  
+    result = evalAnswers(one, two, three, four, five);   
 
-  document.getElementById("suggestion").innerText = result; 
-} 
-
+    document.getElementById("suggestion").innerText = result; 
+    document.getElementById("sgn-hdr").removeAttribute("hidden"); 
+  } 
+}
 
 
 window.addEventListener("load", function(){

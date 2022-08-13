@@ -20,14 +20,15 @@
 
   <!--In my opinion, one should eventually learn all 4 of these (in addition to some others, like C, Java, HTML, etc, but that's just me.)-->
   <p>
-    The following quiz will ask you some questions. Then, based on your answers, it will suggest at least one -- out of 4** -- Programming Languages to learn. 
+    The following quiz will ask you some questions. Then, based on your answers, it will suggest at least one (out of 4**) Programming Languages to learn. 
+
     **These are: 
     <ul> 
       <li> 
         C# ("C-sharp")
       </li> 
       <li> 
-        Javascript 
+        JavaScript 
       </li> 
       <li> 
         Python 
@@ -35,10 +36,13 @@
       <li> 
         Swift
       </li> 
-    </ul>
+    </ul> 
+
+    
+    You may start <em>whenever</em> you're ready.
   </p> 
 
-  <p>You may start whenever you're ready</p>
+  <h2>The Quiz</h2> 
 
   <form id="Qs">
     <label for="ans1">1. Which of these 4 programming languages interest you the most? (Choose one)</label>
@@ -55,10 +59,10 @@
 
 
 
-    <label for="ans2">2. How interested are you in Machine Learning (a.k.a. "Artificial Intelligence" or "AI")?</label>
+    <label for="ans2">2. How interested are you in Machine Learning  (a.k.a. "Artificial Intelligence")?</label>
  
     <!--Last option doesn't trigger anything at the moment. However, in the future an alert box could pop up with a description. 
-      (I'm thinking that the User click 'Ok' to dismiss it, and then -- armed with that new knowledge -- choose one of the other answers) 
+      (I'm thinking that the User can click 'Ok' to dismiss it, and then -- armed with that new knowledge -- choose one of the other answers) 
     -->
     <select id="ans2">
       <option value="0"> </option>
@@ -115,10 +119,13 @@
 
 
   <!--Result section [suggested language]-->
+  <h3 id="sgn-hdr" class="hidden">Your Suggested (Programming) Language</h3>  <!-- This header is hidden until the result is output. --> 
   <p id="suggestion"></p>  
 
 
 </body>
+
+</html> 
 
 
 
@@ -131,6 +138,3 @@
     All of the above 
     None of the above 
 -->
-
-
-</html>
