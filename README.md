@@ -37,4 +37,4 @@ As a result, it's entirely possible that Javascript will be suggested to the use
 
 Email me at ladolego@gmail.com for questions, ideas, concerns, or even any issues that you run into.  You may also clone or Fork the content in this Repo to fiddle around with it, if you like. 
 
-Copyright (c) _8-12-2022_ _Samuel Majerus_
+Licensed through MIT. Copyright (c)  8-12-2022, Samuel Majerus. 
