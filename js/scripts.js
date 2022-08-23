@@ -101,7 +101,7 @@ function evalAnswers(a1, a2, a3, a4, a5){  //Determines what best suggestion is 
     java+=3; 
     pyth+=2; 
     swift+=2; 
-  } else if(a4 === 8) {
+  } else {  // a4 ===8
     //Increment all by 3 
     sharp+=3; 
     java+=3; 
@@ -152,28 +152,26 @@ function evalRatings(r1, r2, r3, r4){  //Accepts the 'rating variables' from 'ev
 
 
 /*   User Interface (UI) Logic    */ 
-window.onload = function(){
-  let form = document.querySelector("Qs"); 
-  form.onsubmit = function handleQzAns(event){  //Handles user's submitted answers 
-    event.preventDefault();   //Prevents default behavior of 'omsubmit' event from occurring (which would prevent the page from functioning as intended). 
+// window.onload = function(){
+//   let form = document.querySelector("#Qs"); 
+function handleQzAns(event){  //Handles user's submitted answers 
+  event.preventDefault();   //Prevents default behavior of 'omsubmit' event from occurring (which would prevent the page from functioning as intended). 
 
-    let result; //Initializes an empty variable. Will have a suggestion-value saved to it before the function returns this var to the function-caller. 
-    
-    //Retrieves user's answers, saves them. 
-    const one = parseInt(document.getElementById("ans1").value); 
-    const two = parseInt(document.getElementById("ans2").value); 
-    const three = parseInt(document.getElementById("ans3").value); 
-    const four = parseInt(document.getElementById("ans4").value); 
-    const five = parseInt(document.getElementById("ans5").value);  
-
+  let result; //Initializes an empty variable. Will have a suggestion-value saved to it before the function returns this var to the function-caller. 
   
-    result = evalAnswers(one, two, three, four, five);   
+  //Retrieves user's answers, saves them. 
+  const one = parseInt(document.getElementById("ans1").value); 
+  const two = parseInt(document.getElementById("ans2").value); 
+  const three = parseInt(document.getElementById("ans3").value); 
+  const four = parseInt(document.getElementById("ans4").value); 
+  const five = parseInt(document.getElementById("ans5").value);  
 
-    document.getElementById("suggestion").innerText = result; 
-    document.getElementById("sgn-hdr").removeAttribute("hidden"); 
-  } 
-}
+  result = evalAnswers(one, two, three, four, five);   
 
+  document.getElementById("suggestion").innerText = result; 
+  document.getElementById("sgn-hdr").removeAttribute("hidden"); 
+} 
+//}
 
 window.addEventListener("load", function(){
   const quiz = document.getElementById("Qs"); 
