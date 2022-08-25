@@ -14,12 +14,14 @@
 
 ## Description
 The user answers 5 questions, and clicks the submit button. What happens between their answers being submitted and the ProgLang suggestion being displayed? I'll explain that now. 
-
+Each ProgLang has its own 'Rating' variable, which has its value incremented by a preset amount depending on which answer is chosen for a question.   Because of this, the process of Answer Evaluation -- which starts immediately after the user submits -- is comprised of two Business Logic stages, with each being represented by a function. 
+The first stage is the bigger of the two functions with 5 blocks of if-else branching statements, with each block dedicated to one question on the quiz. Each block increments the 'Rating' variables by certain amounts, some more than the others -- it all depends on which answer the user selected to the question. 
+The second stage compares the numerical values of the 4 Rating variables against each other. If one variable is larger than all the others, the ProgLang represented by it becomes the suggestion that is returned to the user.   If there are 2 or more variables that are equivalent to one another, but are greater than other variables that have different values, the user is told that 2 or more ProgLangs were equally suitable.   (It doesn't tell the user which ones those are, because the specification I was given for this application explictly stated not to suggest 2 or more ProgLangs at the same time.) 
 
 
 ## Setup/Installation Requirements
-
-* To Clone the program from GitHub to your local machine: 
+* All that's required to run this application -- at minimum -- is:  a decently-performing laptop, and a reliable Internet connection. 
+* To Clone the program from the GitHub repo to your local machine: 
   * 1.)    Click the green button labelled 'Code'. Under the 'HTTPS' tab, there are 3 Options. If you know how to use Git in command line and have Git BASH installed, move on to Step 2a.    Otherwise, I recommend Option 3, where it says 'Download ZIP'. (move on to Step 2b).  
   * 2.)
     * a.)   If you selected Option 1:   Copy the link. Then, in Git BASH, navigate to the folder you want to put the files in. This can be your Desktop directory, or a different subfolder, whatever you prefer. Next, still in the Git BASH console, type the following (with the copied-link in place of 'HTTPS') and hit ENTER:  
