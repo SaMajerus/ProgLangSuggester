@@ -6,22 +6,11 @@
   <title>Programming Language Suggestor:  A Quiz</title> 
 </head>
 
-
-<!--The 4 languages I've chosen as suggestion options for this Quiz are the following: 
-  C#
-  Javascript 
-  Python 
-  Swift [which is similar to Java, if memory serves.] 
--->
-
+<!--The 4 languages I've chosen as suggestion options for this Quiz are the following:    C#,  JavaScript,  Python,  Swift --> 
 
 <body>
   <h1>Programming Language Suggestor - A Quiz</h1>  
-
-  <!--In my opinion, one should eventually learn all 4 of these (in addition to some others, like C, Java, HTML, etc, but that's just me.)-->
-  <p>
-    The following quiz will ask you some questions. Then, based on your answers, it will suggest at least one (out of 4**) Programming Languages to learn. 
-  </p> 
+  <p> The following quiz will ask you some questions. Then, based on your answers, it will suggest at least one (out of 4**) Programming Languages to learn. </p> 
 
   <p>  
     **These are: 
@@ -39,18 +28,14 @@
         Swift
       </li> 
     </ul> 
-
     
-    You may start <em>whenever</em> you're ready.
-  
+    You may begin <em>whenever</em> you're ready.
   </p> 
-
+  <!--In my opinion, one should eventually learn all 4 of these (in addition to some others, like C, Java, HTML, etc), but that's just me.-->
 
   <h2>The Quiz</h2> 
-
-  <form id="Qs">
-    <label for="ans1">1. Which of these 4 programming languages interest you the most? (Choose one)</label>
-
+  <form id="Qs">  
+    <label for="ans1">1.)  Which of these 4 programming languages interest you the most? (Choose one)</label>  
     <select id="ans1">
       <option value="0"> </option>  <!--This is so that the box is blank when no options have been chosen.-->
       <option value="1">C#</option>  
@@ -58,28 +43,22 @@
       <option value="3">Python</option>
       <option value="4">Swift</option>
       <option value="5">All of the above</option> 
-      <option value="6">None of the above</option>
+      <option value="6">All except Swift</option>
+      <option value="7">None of the above</option>
     </select> <br>   
 
-
-
-    <label for="ans2">2. How interested are you in Machine Learning  (a.k.a. "Artificial Intelligence")?</label>
- 
-    <!--Last option doesn't trigger anything at the moment. However, in the future an alert box could pop up with a description. 
-      (I'm thinking that the User can click 'Ok' to dismiss it, and then -- armed with that new knowledge -- choose one of the other answers) 
-    -->
+    <label for="ans2">2.)  How would you rate your level of interest in Machine Learning  (a.k.a. "Artificial Intelligence")?</label>
     <select id="ans2">
       <option value="0"> </option>
-      <option value="1">Very</option>
-      <option value="2">Somewhat</option>
-      <option value="3">Neutral/Unsure</option>
-      <option value="4">No Interest</option>
-      <option value="5">I've never heard of it before. Tell me more?</option> 
+      <option value="1">Extremely</option>
+      <option value="2">Very</option>
+      <option value="3">Somewhat</option>
+      <option value="4">Neutral/Unsure</option>
+      <option value="5">No Interest</option>
+      <option value="6">I've never heard of it before. Tell me more?</option>   <!--This doesn't trigger anything at the moment. However, in the future an alert box could pop up with a description. (The User can click 'Ok' to dismiss it, and then -- armed with that new knowledge -- choose one of the other answers) -->
     </select> <br> 
 
-
-
-    <label for="ans3">3. How important to you is it for a webpage to be interactive?</label> 
+    <label for="ans3">3.)  How important to you is it for a webpage to be interactive?</label> 
     <select id="ans3">
       <option value="0"> </option>
       <option value="1">Dealbreaker</option>   <!--"If it's not there, I'm not accessing the website."-->
@@ -88,9 +67,7 @@
       <option value="4">No opinion</option> 
     </select> <br> 
 
-
-
-    <label for="ans4">4. What must a programming language have/be to make it worth learning?</label>
+    <label for="ans4">4.)  What must a programming language have/be to make it worth learning?</label>
     <select id="ans4"> 
       <option value="0"> </option>
       <option value="1">General-purpose</option> <!--+1 for all-->
@@ -104,9 +81,7 @@
       <option value="9">No opinion/Unsure</option>  
     </select> <br> 
 
-
-
-    <label for="ans5">5. Do you have past or current experience with programming languages that aren't listed above? (Choose the option fits you best)</label>
+    <label for="ans5">5.)  Do you have past or current experience with programming languages that aren't listed above? (Choose the option fits you best)</label>
     <select id="ans5">
       <option value="0"> </option>
       <option value="1">Java, C, C++</option> <!--Increment all by 1--> 
@@ -114,31 +89,12 @@
       <option value="3">No current/past programming experience</option> 
     </select> <br> 
 
-
-
     <!--'Evaluate [Answers]'/submission button-->
     <button type="submit">Evaluate Me!</button> 
-
   </form>
-
 
   <!--Result section [suggested language]-->
   <h3 id="sgn-hdr" class="hidden">Your Suggested (Programming) Language</h3>  <!-- This header is hidden until the result is output. --> 
   <p id="suggestion"></p>  
-
-
 </body>
-
 </html> 
-
-
-
-<!-- Note-To-Self [possible future input-type option for Q1]: Checkbox. (In case User likes more than one of those listed (with descriptions) above.)
-  "Do any of the 4 programming languages described above interest you? (Check the box(-es) that best describe your feelings.)" 
-    C# 
-    Javascript 
-    Python 
-    Swift 
-    All of the above 
-    None of the above 
--->
