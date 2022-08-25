@@ -19,13 +19,22 @@ The user answers 5 questions, and clicks the submit button. What happens between
 
 ## Setup/Installation Requirements
 
-* Files required for the program to execute normally: 'pLangQz.html', 'js/scripts.js'. 
-  * I highly recommend downloading the 'css/styles.css' files as well, to enhance readability through formatting and organization.   
-* In the installation folder, the files 'styles.css' and 'scripts,js' must stored in folders named 'css' and 'js', respectively. These two folders -- with the aforementioned files stored respectively -- must also be in the same folder location as the HTML file, otherwise the interactive nature of the program will not be there on the webpage when the HTML file is run (by double-click). 
-  * Basically, assuming 'styles.css' is stored in a folder named 'css' and  'scripts.js' is stored in a folder named 'js', then for the application to function after initial execution, the listing of files and folders stored in the containing folder in which these files were installed must look something like this (assume that names with a '/' at the end are folders):  
-    'pLangQz.html'    'css/'    'js/'  
+* To Clone the program from GitHub to your local machine: 
+  * 1.)    Click the green button labelled 'Code'. Under the 'HTTPS' tab, there are 3 Options. If you know how to use Git in command line and have Git BASH installed, move on to Step 2a.    Otherwise, I recommend Option 3, where it says 'Download ZIP'. (move on to Step 2b).  
+  * 2.)
+    * a.)   If you selected Option 1:   Copy the link. Then, in Git BASH, navigate to the folder you want to put the files in. This can be your Desktop directory, or a different subfolder, whatever you prefer. Next, still in the Git BASH console, type the following (with the copied-link in place of 'HTTPS') and hit ENTER:  
+    'git clone HTTPS' 
+    Several lines of text will come up in the console -- that's the files being copied into whichever directory/folder you're in currently.  Then, do the following once your prompt line reappears:   While still in the console window, type 'pwd' and press ENTER.  This will display your current file path. Copy that by highlighting it and pressing 'Ctrl-C', and then pasting it in an easily-accessible word processor like Notepad for reference.    
+    Next, open File Explorer, and navigate to through your files according to that File Path you just copy-pasted for reference.  Once you've done this, move on to Step 3. 
+    
+    * 2b.)  Once the '.zip' file is downloaded, unzip and open the folder.  Next, move on to Step 3.
 
-* Once the program is running (the webpage is open in your browser), everything else should be self-explanatory.  To clear your answers and take the Quiz again, simply reload the page. 
+  * 3.)  Before opening the HTML file, do the following:   right-click the containing folder (in which the newly-copied files are stored)  and select the option that says 'Pin to Quick Access'. That way, if the tab is accidentally closed for whatever reason and you want to reopen it, the folder can be accessed again in one step.  
+  Move on to Step 4. 
+  
+  * 4.)  To open the webpage, double-click the file named  'pLangQz.html'. The webpage will then be opened in a new browser tab.  Everything else after that should be self-explanatory. 
+* IMPORTANT:  the webpage's interactive features will not work if the files' containing folder doesn't look something like this  (names with a '/' are folders):  
+'README.md'   'pLangQz.html'    'css/'    'js/'
 
 
 ## Known Bugs
